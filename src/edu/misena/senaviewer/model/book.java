@@ -78,7 +78,7 @@ public class book {
 
     //Isbn
 
-    public int getIsbn(){
+    public int getIsbn(int isbn){
         return isbn;
     }
 
