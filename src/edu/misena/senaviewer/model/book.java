@@ -52,7 +52,7 @@ public class book {
         return editionDate;
     }
 
-    public void setEdititionDate(){
+    public void setEditionDate(Date editionDate) {
         this.editionDate = editionDate;
     }
 
@@ -62,7 +62,7 @@ public class book {
         return editorial;
     }
 
-    public void setEditorial(){
+    public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
 
@@ -72,7 +72,7 @@ public class book {
         return authors;
     }
 
-    public void setAuthors(){
+    public void setAuthors(String authors) {
         this.authors = authors;
     }
 
@@ -82,7 +82,7 @@ public class book {
         return isbn;
     }
 
-    public void setIsbn(){
+    public void setIsbn(int isbn) {
         this.isbn = isbn;
     }
 
@@ -92,7 +92,7 @@ public class book {
         return  readed;
     }
 
-    public void setReaded(){
+    public void setReaded(boolean readed) {
         this.readed = readed;
     }
 
@@ -102,7 +102,7 @@ public class book {
         return timeReaded;
     }
 
-    public void setTimeReaded(){
+    public void setTimeReaded(Date timeReaded) {
         this.timeReaded = timeReaded;
     }
 }
