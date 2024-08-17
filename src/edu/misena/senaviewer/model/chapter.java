@@ -39,7 +39,7 @@ public class chapter {
         return title;
     }
 
-    public void setTitle(){
+    public void setTitle(String title){
         this.title = title;
     }
 
@@ -59,7 +59,7 @@ public class chapter {
         return year;
     }
 
-    public void setYear(){
+    public void setYear(Date year) {
         this.year = year;
     }
 
@@ -69,7 +69,7 @@ public class chapter {
         return viewed;
     }
 
-    public void setViewed(){
+    public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
 
