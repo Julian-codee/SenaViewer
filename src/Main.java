@@ -14,6 +14,7 @@ public class Main {
         serie serie = new serie("Soy leyenda", "Accion", 2);
         book book= new book("A dos metros de ti", new Date(2010), "Nube de Tinta: 001 edición (21 Marzo 2019)", "841760502");
         magazine magazine = new magazine("Vogue",  new Date(2005), " Conde Nast Publications Inc");
+        chapter chapter = new chapter("La Casa de papel",3,new Date(2022));
         Scanner scanner = new Scanner(System.in);
 
         //Declaraciones de las variables
@@ -23,6 +24,7 @@ public class Main {
         int option3;
         int option4;
         int option5;
+        int option6;
 
         do {String message = "\n\n!--Bienvenido a SenaViewed--¡\n\n";
 
@@ -40,8 +42,18 @@ public class Main {
 
             switch (option) {
                 case 1:
-                     {System.out.println("1)Titulo \n2)Genero  \n3)Creador \n4)Duracion  \n5)Pelicula \n6)Todas las opciones");
-                        option2 = scanner.nextInt();
+                     {String message2 = "\n\n!--Movie--¡\n\n";
+
+                         message2 += "1. Titulo\n";
+                         message2 += "2. Genero\n";
+                         message2 += "3. Creador\n";
+                         message2 += "4. Duración\n";
+                         message2 += "5. Año Pelicula\n";
+                         message2 += "6. Todas las anteriores...\n\n";
+
+                         System.out.println(message2);
+                         System.out.println("Elige tu opcion: ");
+                         option2 = scanner.nextInt();
                         switch (option2) {
                             case 1:
                                 System.out.println("El titulo es: "+ movie.getTitle());
@@ -74,19 +86,30 @@ public class Main {
                     }
 
                 case 2:
-                     {System.out.println("1)Titulo \n2)Genero  \n3)Duracion  \n4)Todas las opciones");
-                        option3 = scanner.nextInt();
+                     {String message3 = "\n\n!--Serie--¡\n\n";
+
+                         message3 += "1. Titulo\n";
+                         message3 += "2. Genero\n";
+                         message3 += "3. Duración\n";
+                         message3 += "4. Todas las anteriores...\n\n";
+
+                         System.out.println(message3);
+                         System.out.println("Elige tu opcion: ");
+                         option3 = scanner.nextInt();
                         switch (option3) {
                             case 1:
-                                System.out.println("El titulo de la pelicula es: "+serie.getTitle());
+                                System.out.println("El titulo de la serie es: "+serie.getTitle());
                                 break;
                             case 2:
-                                System.out.println("El genero de la pelicula es: "+serie.getGenre());
+                                System.out.println("El genero de la serie es: "+serie.getGenre());
                                 break;
                             case 3:
-                                System.out.println("El titulo de la pelicula es: "+serie.getTitle()+
-                                        "\nEl genero de la pelicula es: "+serie.getGenre()+
-                                        "\nLa duracion de la pelicula es: "+serie.getDuration());
+                                System.out.println("la duracion de la serie es: "+serie.getDuration());
+                                break;
+                            case 4:
+                                System.out.println("El titulo de la serie es: "+serie.getTitle()+
+                                        "\nEl genero de la serie es: "+serie.getGenre()+
+                                        "\nLa duracion de la serie es: "+serie.getDuration());
                                 break;
                             default:{
                                 System.out.println("Ingrese una opcion valida...");
@@ -97,8 +120,17 @@ public class Main {
                     }
 
                 case 3:
-                     {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Isbn  \n5)Todas las opciones");
-                        option4 = scanner.nextInt();
+                     {String message4 = "\n\n!--Book--¡\n\n";
+
+                         message4 += "1. Titulo\n";
+                         message4 += "2. Fecha de Edición\n";
+                         message4 += "3. Editorial\n";
+                         message4 += "4. Isbn\n";
+                         message4 += "5. Todas las anteriores...\n\n";
+
+                         System.out.println(message4);
+                         System.out.println("Elige tu opcion: ");
+                         option4 = scanner.nextInt();
                         switch (option4) {
                             case 1:
                                 System.out.println("El titulo del libro es: "+ book.getTitle());
@@ -126,8 +158,16 @@ public class Main {
                     }
 
                 case 4:
-                     {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Todas las opciones");
-                        option5 = scanner.nextInt();
+                     {String message5 = "\n\n!--Magazine--¡\n\n";
+
+                         message5 += "1. Titulo\n";
+                         message5 += "2. Fecha de Edición\n";
+                         message5 += "3. Editorial\n";
+                         message5 += "4. Todas las anteriores...\n\n";
+
+                         System.out.println(message5);
+                         System.out.println("Elige tu opcion: ");
+                         option5 = scanner.nextInt();
                         switch (option5) {
                             case 1:
                                 System.out.println("El titulo de la revista es: "+magazine.getTitle());
@@ -151,21 +191,30 @@ public class Main {
                     }
 
                 case 5:
-                     {System.out.println("1)Titulo \n2)Duracion  \n3)Año \n4)Todas las opciones");
-                        option5 = scanner.nextInt();
-                        switch (option5) {
+                     {String message6 = "\n\n!--Chapter--¡\n\n";
+
+                         message6 += "1. Titulo\n";
+                         message6 += "2. Duracion\n";
+                         message6 += "3. Año Capitulo\n";
+                         message6 += "4. Todas las anteriores...\n\n";
+
+                         System.out.println(message6);
+                         System.out.println("Elige tu opcion: ");
+                         option6 = scanner.nextInt();
+                        switch (option6) {
                             case 1:
-                                System.out.println("El titulo de la revista es: "+ chapter.getTitle());
+                                System.out.println("El titulo del capitulo es: "+ chapter.getTitle());
                                 break;
                             case 2:
-                                System.out.println("La fecha de edición de la revista es: "+chapter.getDuration());
+                                System.out.println("La duracion del capitulo es: "+chapter.getDuration());
                                 break;
                             case 3:
-                                System.out.println("El editorial de la revista es: "+ chapter.getYear());
+                                System.out.println("El año del capitulo es: "+ chapter.getYear());
+                                break;
                             case 4:
-                                System.out.println("El titulo de la revista es: "+chapter.getTitle()+
-                                        "\nLa fecha de edición de la revista es: "+chapter.getDuration()+
-                                        "\nEl editorial de la revista es: "+chapter.getYear());
+                                System.out.println("El titulo del capitulo es: "+chapter.getTitle()+
+                                        "\nLa duracion del capitulo es: "+chapter.getDuration()+
+                                        "\nEl año del capitulo es: "+chapter.getYear());
                                 break;
                             default:{
                                 System.out.println("Ingrese una opcion valida...");
