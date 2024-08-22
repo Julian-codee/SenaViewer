@@ -6,8 +6,8 @@ import java.util.Date;
 public class chapter {
 
     int id;
-    String title;
-    int duration;
+    static String title;
+    static int duration;
     static Date year;
     boolean viewed;
     int timeViewed;
