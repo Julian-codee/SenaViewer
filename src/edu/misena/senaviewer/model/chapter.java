@@ -1,4 +1,5 @@
 package edu.misena.senaviewer.model;
+
 import org.w3c.dom.css.CSSStyleRule;
 
 import java.util.Date;
@@ -12,10 +13,11 @@ public class chapter {
     boolean viewed;
     int timeViewed;
     int sessionNumber;
-    public chapter(){
+
+    public chapter() {
     }
 
-    public  chapter(String title,int duration, Date year){
+    public chapter(String title, int duration, Date year) {
         this.title = title;
         this.duration = duration;
         this.year = year;
@@ -25,37 +27,37 @@ public class chapter {
 
     //id
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
     //Title
 
-    public static String getTitle(){
+    public static String getTitle() {
         return title;
     }
 
-    public void setTitle(String title){
+    public void setTitle(String title) {
         this.title = title;
     }
 
     //Duration
 
-    public static int getDuration(){
+    public static int getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration){
+    public void setDuration(int duration) {
         this.duration = duration;
     }
 
     //Year
 
-    public static Date getYear(){
+    public static Date getYear() {
         return year;
     }
 
@@ -65,7 +67,7 @@ public class chapter {
 
     //Viewed
 
-    public boolean getViewed(){
+    public boolean getViewed() {
         return viewed;
     }
 
@@ -75,21 +77,21 @@ public class chapter {
 
     //TimeViewd
 
-    public int getTimeViewed(){
+    public int getTimeViewed() {
         return timeViewed;
     }
 
-    public void setTimeViewed(int timeViewed){
+    public void setTimeViewed(int timeViewed) {
         this.timeViewed = timeViewed;
     }
 
     //SessionNumber
 
-    public int getSessionNumber(){
+    public int getSessionNumber() {
         return sessionNumber;
     }
 
-    public void setSessionNumber(int sessionNumber){
+    public void setSessionNumber(int sessionNumber) {
         this.sessionNumber = sessionNumber;
     }
 

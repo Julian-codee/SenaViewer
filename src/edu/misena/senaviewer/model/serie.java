@@ -12,11 +12,12 @@ public class serie {
     boolean viewed;
     int timeViewed;
     int sessionQuantity;
+
     public serie() {
 
     }
 
-    public serie(String title,String genre, int duration){
+    public serie(String title, String genre, int duration) {
         this.title = title;
         this.genre = genre;
         this.duration = duration;

@@ -1,4 +1,5 @@
 package edu.misena.senaviewer.model;
+
 import java.util.Date;
 
 public class book {
@@ -11,12 +12,12 @@ public class book {
     String isbn;
     boolean readed;
     Date timeReaded;
-    public book(){
+
+    public book() {
 
     }
 
-    public book (String title , Date edititionDate, String editorial, String  isbn)
-    {
+    public book(String title, Date edititionDate, String editorial, String isbn) {
         this.title = title;
         this.editionDate = edititionDate;
         this.editorial = editorial;
@@ -39,18 +40,18 @@ public class book {
 
     //title
 
-    public String getTitle(){
+    public String getTitle() {
 
         return title;
     }
 
-    public void setTitle(String title){
+    public void setTitle(String title) {
         this.title = title;
     }
 
     //EditionDate
 
-    public Date getEditionDate(){
+    public Date getEditionDate() {
         return editionDate;
     }
 
@@ -60,7 +61,7 @@ public class book {
 
     //Editorial
 
-    public String getEditorial(){
+    public String getEditorial() {
         return editorial;
     }
 
@@ -70,7 +71,7 @@ public class book {
 
     //Authors
 
-    public String getAuthors(){
+    public String getAuthors() {
         return authors;
     }
 
@@ -89,8 +90,8 @@ public class book {
     }
     //Readed
 
-    public boolean getReaded(){
-        return  readed;
+    public boolean getReaded() {
+        return readed;
     }
 
     public void setReaded(boolean readed) {
@@ -99,7 +100,7 @@ public class book {
 
     // TimeReaded
 
-    public Date getTimeReaded(){
+    public Date getTimeReaded() {
         return timeReaded;
     }
 

@@ -1,4 +1,5 @@
 package edu.misena.senaviewer.model;
+
 import java.util.Date;
 
 public class movie {
@@ -10,11 +11,12 @@ public class movie {
     Date year;
     boolean viewed;
     int timeViewed;
-    public movie(){
+
+    public movie() {
 
     }
 
-    public movie(String title, String genre, String creator,int duration, Date year ){
+    public movie(String title, String genre, String creator, int duration, Date year) {
         this.title = title;
         this.genre = genre;
         this.creator = creator;
