@@ -8,14 +8,14 @@ public class book {
     Date editionDate;
     String editorial;
     String authors;
-    int isbn;
+    String isbn;
     boolean readed;
     Date timeReaded;
     public book(){
 
     }
 
-    public book (String title , Date edititionDate, String editorial, int isbn)
+    public book (String title , Date edititionDate, String editorial, String  isbn)
     {
         this.title = title;
         this.editionDate = edititionDate;
@@ -29,6 +29,7 @@ public class book {
     //id
 
     public int getId() {
+
         return id;
     }
 
@@ -39,6 +40,7 @@ public class book {
     //title
 
     public String getTitle(){
+
         return title;
     }
 
@@ -48,7 +50,7 @@ public class book {
 
     //EditionDate
 
-    public Date getEdititionDate(){
+    public Date getEditionDate(){
         return editionDate;
     }
 
@@ -78,14 +80,13 @@ public class book {
 
     //Isbn
 
-    public int getIsbn(int isbn){
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(int isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
-
     //Readed
 
     public boolean getReaded(){
@@ -105,4 +106,6 @@ public class book {
     public void setTimeReaded(Date timeReaded) {
         this.timeReaded = timeReaded;
     }
+
+
 }
