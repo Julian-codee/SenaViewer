@@ -2,6 +2,7 @@ import edu.misena.senaviewer.model.movie;
 import edu.misena.senaviewer.model.serie;
 import edu.misena.senaviewer.model.book;
 import edu.misena.senaviewer.model.magazine;
+import edu.misena.senaviewer.model.chapter;
 
 import java.util.Date;
 import java.util.Scanner;
@@ -25,11 +26,11 @@ public class Main {
 
         do {String message = "\n\n!--Bienvenido a SenaViewed--¡\n\n";
 
-            message += "1. Book\n";
-            message += "2. Chapter\n";
-            message += "3. Movie\n";
-            message += "4. Serie\n";
-            message += "5. Magazine\n";
+            message += "1. Movie\n";
+            message += "2. Serie\n";
+            message += "3. Book\n";
+            message += "4. Magazine\n";
+            message += "5. Chapter\n";
             message += "6. Salir...\n\n";
 
             System.out.println(message);
@@ -39,7 +40,7 @@ public class Main {
 
             switch (option) {
                 case 1:
-                    do {System.out.println("1)Titulo \n2)Genero  \n3)Creador \n4)Duracion  \n5)Pelicula \n6)Todas las opciones");
+                     {System.out.println("1)Titulo \n2)Genero  \n3)Creador \n4)Duracion  \n5)Pelicula \n6)Todas las opciones");
                         option2 = scanner.nextInt();
                         switch (option2) {
                             case 1:
@@ -64,12 +65,16 @@ public class Main {
                                         "\n La duracion de la pelicula es: "+movie.getDuration()+
                                         "\n El año de la pelicula es: "+movie.getYear());
                                 break;
+                            default:{
+                                System.out.println("Ingrese una opcion valida...");
+                                break;
+                            }
                         }
                         break;
-                    }while ( (option2 !=6));
+                    }
 
                 case 2:
-                    do {System.out.println("1)Titulo \n2)Genero  \n3)Duracion  \n4)Todas las opciones");
+                     {System.out.println("1)Titulo \n2)Genero  \n3)Duracion  \n4)Todas las opciones");
                         option3 = scanner.nextInt();
                         switch (option3) {
                             case 1:
@@ -83,12 +88,16 @@ public class Main {
                                         "\nEl genero de la pelicula es: "+serie.getGenre()+
                                         "\nLa duracion de la pelicula es: "+serie.getDuration());
                                 break;
+                            default:{
+                                System.out.println("Ingrese una opcion valida...");
+                                break;
+                            }
                         }
                         break;
-                    }while ( (option3 !=7));
+                    }
 
                 case 3:
-                    do {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Isbn  \n5)Todas las opciones");
+                     {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Isbn  \n5)Todas las opciones");
                         option4 = scanner.nextInt();
                         switch (option4) {
                             case 1:
@@ -108,12 +117,16 @@ public class Main {
                                         "\nEl editorial del libro es: "+ book.getEditorial()+
                                         "\nEl isbn del libro es: "+ book.getIsbn());
                                 break;
+                            default:{
+                                System.out.println("Ingrese una opcion valida...");
+                                break;
+                            }
                         }
                         break;
-                    }while ( (option4 !=7));
+                    }
 
                 case 4:
-                    do {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Todas las opciones");
+                     {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Todas las opciones");
                         option5 = scanner.nextInt();
                         switch (option5) {
                             case 1:
@@ -129,30 +142,38 @@ public class Main {
                                         "\nLa fecha de edición de la revista es: "+magazine.getEditionDate()+
                                         "\nEl editorial de la revista es: "+magazine.getEditorial());
                                 break;
+                            default:{
+                                System.out.println("Ingrese una opcion valida...");
+                                break;
+                            }
                         }
                         break;
-                    }while ( (option5 !=7));
+                    }
 
                 case 5:
-                    do {System.out.println("1)Titulo \n2)Fecha de edicion  \n3)Editorial \n4)Todas las opciones");
+                     {System.out.println("1)Titulo \n2)Duracion  \n3)Año \n4)Todas las opciones");
                         option5 = scanner.nextInt();
                         switch (option5) {
                             case 1:
-                                System.out.println("El titulo de la revista es: "+magazine.getTitle());
+                                System.out.println("El titulo de la revista es: "+ chapter.getTitle());
                                 break;
                             case 2:
-                                System.out.println("La fecha de edición de la revista es: "+magazine.getEditionDate());
+                                System.out.println("La fecha de edición de la revista es: "+chapter.getDuration());
                                 break;
                             case 3:
-                                System.out.println("El editorial de la revista es: "+ magazine.getEditorial());
+                                System.out.println("El editorial de la revista es: "+ chapter.getYear());
                             case 4:
-                                System.out.println("El titulo de la revista es: "+magazine.getTitle()+
-                                        "\nLa fecha de edición de la revista es: "+magazine.getEditionDate()+
-                                        "\nEl editorial de la revista es: "+magazine.getEditorial());
+                                System.out.println("El titulo de la revista es: "+chapter.getTitle()+
+                                        "\nLa fecha de edición de la revista es: "+chapter.getDuration()+
+                                        "\nEl editorial de la revista es: "+chapter.getYear());
                                 break;
+                            default:{
+                                System.out.println("Ingrese una opcion valida...");
+                                break;
+                            }
                         }
                         break;
-                    }while ( (option5 !=7));
+                    }
 
                 case 6:
                     System.out.println("Saliendo del programa...");

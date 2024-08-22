@@ -8,7 +8,7 @@ public class chapter {
     int id;
     String title;
     int duration;
-    Date year;
+    static Date year;
     boolean viewed;
     int timeViewed;
     int sessionNumber;
@@ -35,7 +35,7 @@ public class chapter {
 
     //Title
 
-    public String getTitle(){
+    public static String getTitle(){
         return title;
     }
 
@@ -45,7 +45,7 @@ public class chapter {
 
     //Duration
 
-    public int getDuration(){
+    public static int getDuration(){
         return duration;
     }
 
@@ -55,7 +55,7 @@ public class chapter {
 
     //Year
 
-    public Date getYear(){
+    public static Date getYear(){
         return year;
     }
 
