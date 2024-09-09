@@ -32,14 +32,16 @@ public class Main {
 
         //Menu do while Primario
         do {
-            String message = "\n\n!--Bienvenido a SenaViewed--¡\n\n";
+            String message = "\n\n!--Bienvenido a SenaViewer--¡\n\n";
 
-            message += "1. Movie\n";
-            message += "2. Serie\n";
-            message += "3. Book\n";
-            message += "4. Magazine\n";
-            message += "5. Chapter\n";
-            message += "6. Salir...\n\n";
+            message += "1. Movies\n";
+            message += "2. Series\n";
+            message += "3. Books\n";
+            message += "4. Magazines\n";
+            message += "5. Chapters\n";
+            message += "6. Report\n";
+            message += "7. Report Today\n";
+            message += "8. Exit...\n\n";
 
             //Imprime la variable message
             System.out.println(message);
@@ -131,7 +133,6 @@ public class Main {
                 }
 
                 //Opciones Switch Book
-
                 case 3: {
                     String message4 = "\n\n!--Book--¡\n\n";
 
@@ -173,7 +174,6 @@ public class Main {
                 }
 
                 //Opciones Switch Magazine
-
                 case 4: {
                     String message5 = "\n\n!--Magazine--¡\n\n";
 
@@ -210,7 +210,6 @@ public class Main {
                 }
 
                 //Opciones Switch Chapter
-
                 case 5: {
                     String message6 = "\n\n!--Chapter--¡\n\n";
 
@@ -247,7 +246,81 @@ public class Main {
                     break;
                 }
 
-                case 6:
+                //Opciones Switch Report
+                case 6: {
+                    String message6 = "\n\n!--Report--¡\n\n";
+
+                    message6 += "1. Titulo\n";
+                    message6 += "2. Duracion\n";
+                    message6 += "3. Año Capitulo\n";
+                    message6 += "4. Todas las anteriores...\n\n";
+
+                    //Imprime la variable message
+                    System.out.println(message6);
+
+                    System.out.println("Elige tu opcion: ");
+                    Choice5 = scanner.nextInt();
+                    switch (Choice5) {
+                        case 1:
+                            System.out.println("El titulo del capitulo es: " + chapter.getTitle());
+                            break;
+                        case 2:
+                            System.out.println("La duracion del capitulo es: " + chapter.getDuration());
+                            break;
+                        case 3:
+                            System.out.println("El año del capitulo es: " + chapter.getYear());
+                            break;
+                        case 4:
+                            System.out.println("El titulo del capitulo es: " + chapter.getTitle() +
+                                    "\nLa duracion del capitulo es: " + chapter.getDuration() +
+                                    "\nEl año del capitulo es: " + chapter.getYear());
+                            break;
+                        default: {
+                            System.out.println("Ingrese una opcion valida...");
+                            break;
+                        }
+                    }
+                    break;
+                }
+
+                //Opciones Switch Report Today
+                case 7: {
+                    String message6 = "\n\n!--Report Today--¡\n\n";
+
+                    message6 += "1. Titulo\n";
+                    message6 += "2. Duracion\n";
+                    message6 += "3. Año Capitulo\n";
+                    message6 += "4. Todas las anteriores...\n\n";
+
+                    //Imprime la variable message
+                    System.out.println(message6);
+
+                    System.out.println("Elige tu opcion: ");
+                    Choice5 = scanner.nextInt();
+                    switch (Choice5) {
+                        case 1:
+                            System.out.println("El titulo del capitulo es: " + chapter.getTitle());
+                            break;
+                        case 2:
+                            System.out.println("La duracion del capitulo es: " + chapter.getDuration());
+                            break;
+                        case 3:
+                            System.out.println("El año del capitulo es: " + chapter.getYear());
+                            break;
+                        case 4:
+                            System.out.println("El titulo del capitulo es: " + chapter.getTitle() +
+                                    "\nLa duracion del capitulo es: " + chapter.getDuration() +
+                                    "\nEl año del capitulo es: " + chapter.getYear());
+                            break;
+                        default: {
+                            System.out.println("Ingrese una opcion valida...");
+                            break;
+                        }
+                    }
+                    break;
+                }
+
+                case 8:
                     System.out.println("Saliendo del programa...");
                     break;
                 default:
