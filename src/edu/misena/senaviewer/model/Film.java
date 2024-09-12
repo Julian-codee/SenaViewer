@@ -2,36 +2,24 @@ package edu.misena.senaviewer.model;
 
 import java.util.Date;
 
-//Creacion de la clase padre Film
-
 public class Film {
+
     int id;
     String title;
     String genre;
     String creator;
     int duration;
     Date year;
-    Boolean viewed;
+    boolean viewed;
 
-    public Film(){
-
-    }
-
-    //Constructor
-
-    public Film(int id, String title, String genre, String creator, int duration, Date year, Boolean viewed){
-        this.id = id;
+    public Film(String title, String genre, String creator, int duration){
         this.title = title;
         this.genre = genre;
         this.creator = creator;
         this.duration = duration;
-        this.year =  year;
-        this.viewed = viewed;
     }
 
-    //Getters , setters and methods
-
-
+    // Getters y Setters
     public int getId() {
         return id;
     }
@@ -80,11 +68,24 @@ public class Film {
         this.year = year;
     }
 
-    public Boolean getViewed() {
+    public boolean isViewed() {
         return viewed;
     }
 
-    public void setViewed(Boolean viewed) {
+    public void setViewed(boolean viewed) {
         this.viewed = viewed;
+    }
+
+    @Override
+    public String toString() {
+        return "Film{" +
+                "id=" + id +
+                ", title='" +title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", creator='" + creator + '\'' +
+                ", duration=" + duration +
+                ", year=" + year +
+                ", viewed=" + viewed +
+                '}';
     }
 }
