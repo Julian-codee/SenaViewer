@@ -5,7 +5,7 @@ public class serie extends Film {
     private int timeViewed;
     private int sessionQuantity;
 
-    public serie(String title , String genre, int duration) {
+    public serie(String title , String genre, String creator, int duration) {
        super(title , genre , creator, duration);
 
     }

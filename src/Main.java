@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         movie movie = new movie("End Game", "Accion", "Stan Lee", 3, new Date(2006));
-        serie serie = new serie("Stranger Things", "Intriga", 2);
+        serie serie = new serie("Stranger Things", "Intriga", "Hermanos duffer",2 );
         book book = new book("La Granja del Borrego", new Date(2010), "Nube de Tinta: 001 edición (21 Marzo 2019)", "841760502");
         magazine magazine = new magazine("Vogue", new Date(2005), " Conde Nast Publications Inc");
         chapter chapter = new chapter("La Casa de papel", 3, new Date(2022));
