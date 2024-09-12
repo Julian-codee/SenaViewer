@@ -10,8 +10,9 @@ public class book extends Publication {
     boolean readed;
     Date timeReaded;
 
-    public book(String title, Date editionDate, String editorial) {
+    public book(String title, Date editionDate, String editorial ) {
         super(title , editionDate , editorial);
+        this.isbn = isbn;
     }
 
     //Getter y setter
@@ -68,4 +69,14 @@ public class book extends Publication {
     }
 
 
+    @Override
+    public String toString() {
+        return "book{" +
+                "id=" + id +
+                ", authors='" + authors + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", readed=" + readed +
+                ", timeReaded=" + timeReaded +
+                '}';
+    }
 }

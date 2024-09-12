@@ -7,7 +7,7 @@ public class magazine extends Publication {
     String authors;
 
 
-    public magazine(String title, Date editionDate, String editorial) {
+    public magazine(String title, Date editionDate, String editorial ) {
        super(title , editionDate , editorial);
     }
 
@@ -23,13 +23,19 @@ public class magazine extends Publication {
         this.id = id;
     }
 
-    //Authors
-
     public String getAuthors() {
         return authors;
     }
 
     public void setAuthors(String authors) {
         this.authors = authors;
+    }
+
+    @Override
+    public String toString() {
+        return "magazine{" +
+                "id=" + id +
+                ", authors='" + authors + '\'' +
+                '}';
     }
 }

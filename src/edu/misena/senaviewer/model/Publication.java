@@ -1,16 +1,19 @@
 package edu.misena.senaviewer.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Publication {
-    String title;
-    Date editionDate;
-    String editorial;
+    private String title;
+    private Date editionDate;
+    private String editorial;
+    private List<String> authors;
 
-    public Publication(String title , Date editionDate , String editorial){
+    public Publication(String title , Date editionDate , String editorial ){
         this.title = title;
         this.editionDate = editionDate;
         this.editorial = editorial;
+
     }
 
     //Getters and Setters
@@ -38,5 +41,16 @@ public class Publication {
 
     public void setEditorial(String editorial) {
         this.editorial = editorial;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Publication{" +
+                "title='" + title + '\'' +
+                ", editionDate=" + editionDate +
+                ", editorial='" + editorial + '\'' +
+                ", authors=" + authors +
+                '}';
     }
 }
