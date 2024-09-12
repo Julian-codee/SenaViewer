@@ -252,75 +252,13 @@ public class Main {
 
                 //Opciones Switch Report
                 case 6: {
-                    String message6 = "\n\n!--Report--¡\n\n";
-
-                    message6 += "1. Titulo\n";
-                    message6 += "2. Duracion\n";
-                    message6 += "3. Año Capitulo\n";
-                    message6 += "4. Todas las anteriores...\n\n";
-
-                    //Imprime la variable message
-                    System.out.println(message6);
-
-                    System.out.println("Elige tu opcion: ");
-                    Choice5 = scanner.nextInt();
-                    switch (Choice5) {
-                        case 1:
-                            System.out.println("El titulo del capitulo es: " + chapter.getTitle());
-                            break;
-                        case 2:
-                            System.out.println("La duracion del capitulo es: " + chapter.getDuration());
-                            break;
-                        case 3:
-                            System.out.println("El año del capitulo es: " + chapter.getYear());
-                            break;
-                        case 4:
-                            System.out.println("El titulo del capitulo es: " + chapter.getTitle() +
-                                    "\nLa duracion del capitulo es: " + chapter.getDuration() +
-                                    "\nEl año del capitulo es: " + chapter.getYear());
-                            break;
-                        default: {
-                            System.out.println("Ingrese una opcion valida...");
-                            break;
-                        }
-                    }
-                    break;
+                        System.out.println("Reporte General Guardado");
+                        break;
                 }
 
                 //Opciones Switch Report Today
                 case 7: {
-                    String message6 = "\n\n!--Report Today--¡\n\n";
-
-                    message6 += "1. Titulo\n";
-                    message6 += "2. Duracion\n";
-                    message6 += "3. Año Capitulo\n";
-                    message6 += "4. Todas las anteriores...\n\n";
-
-                    //Imprime la variable message
-                    System.out.println(message6);
-
-                    System.out.println("Elige tu opcion: ");
-                    Choice5 = scanner.nextInt();
-                    switch (Choice5) {
-                        case 1:
-                            System.out.println("El titulo del capitulo es: " + chapter.getTitle());
-                            break;
-                        case 2:
-                            System.out.println("La duracion del capitulo es: " + chapter.getDuration());
-                            break;
-                        case 3:
-                            System.out.println("El año del capitulo es: " + chapter.getYear());
-                            break;
-                        case 4:
-                            System.out.println("El titulo del capitulo es: " + chapter.getTitle() +
-                                    "\nLa duracion del capitulo es: " + chapter.getDuration() +
-                                    "\nEl año del capitulo es: " + chapter.getYear());
-                            break;
-                        default: {
-                            System.out.println("Ingrese una opcion valida...");
-                            break;
-                        }
-                    }
+                    System.out.println("Reporte Diario Guardado");
                     break;
                 }
 
@@ -332,7 +270,7 @@ public class Main {
                     break;
             }
 
-        } while ((Choice != 6));
+        } while ((Choice != 8));
 
 
     }
