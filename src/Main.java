@@ -5,15 +5,68 @@ import edu.misena.senaviewer.model.serie;
 import edu.misena.senaviewer.model.book;
 import edu.misena.senaviewer.model.magazine;
 import edu.misena.senaviewer.model.chapter;
+import java.util.ArrayList;
+import java.util.List;
 
 //Imports de Usabilidad
 
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 //Importacion de la informacion Movie, Serie , Book, Magazine, Chapter
 public class Main {
+
+    //Implementacion array List
+
+    private List<String> cliente;
+
+   public Main(){
+       cliente = new ArrayList<>();
+   }
+
+   //Agregar aprendiz
+   public void agregarCliente(String nombre){
+       cliente.add(nombre);
+   }
+
+   //Mostrar aprendices
+
+    public void mostrarCliente(){
+        System.out.println("\n\n--Clientes Registrados--\n ");
+        for (String aprendiz : cliente){
+            System.out.println(aprendiz);
+        }
+    }
+
+    //Eliminar
+
+    public void eliminarCliente(String nombre){
+       if(cliente.contains(nombre)) {
+           cliente.remove(nombre);
+           System.out.println("\n\n--Clientes Eliminados--\n");
+           System.out.println(nombre + " Eliminado");
+       }else {
+           System.out.println(nombre + " No se encontro en la lista. ");
+       }
+    }
+
+    //Utilizacion de los metodos
+
     public static void main(String[] args) {
+
+       Main main = new Main();
+       main.agregarCliente("Luis");
+       main.agregarCliente("Carlos");
+       main.agregarCliente("Ana");
+
+       main.mostrarCliente();
+
+       main.eliminarCliente("Luis");
+       main.mostrarCliente();
+
+
+
         movie movie = new movie("End Game", "Accion", "Stan Lee", 3, new Date(2006));
         serie serie = new serie("Stranger Things", "Intriga", "Hermanos duffer",2 );
 
