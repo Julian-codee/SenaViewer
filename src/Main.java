@@ -7,14 +7,11 @@ import edu.misena.senaviewer.model.magazine;
 import edu.misena.senaviewer.model.chapter;
 import java.util.ArrayList;
 import java.util.List;
-
-//Imports de Usabilidad
-
 import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 
-//Importacion de la informacion Movie, Serie , Book, Magazine, Chapter
+/*Creacion de la clase padre*/
+
 public class Main {
 
     //Implementacion array List
@@ -51,9 +48,10 @@ public class Main {
        }
     }
 
-    //Utilizacion de los metodos
 
     public static void main(String[] args) {
+
+        //Utilizacion de los metodos Clientes
 
        Main main = new Main();
        main.agregarCliente("Luis");
@@ -65,7 +63,7 @@ public class Main {
        main.eliminarCliente("Luis");
        main.mostrarCliente();
 
-
+       //Metodos para agregar nuevas entidades
 
         movie movie = new movie("End Game", "Accion", "Stan Lee", 3, new Date(2006));
         serie serie = new serie("Stranger Things", "Intriga", "Hermanos duffer",2 );
